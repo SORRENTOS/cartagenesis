@@ -1,0 +1,97 @@
+.heart{
+    top: 100px;
+    margin: 20px;
+    left: 450px;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    animation: heart 0.6s linear infinite;
+}
+.heart::before{
+
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px #f20044;
+}
+.heart::after{
+
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px #f20044;
+}
+@keyframes heart{
+
+0%{
+
+    transform: rotate(-45deg) scale(1.05);
+}
+20%{
+
+    transform: rotate(-45deg) scale(1.0);
+}
+80%{
+
+    transform: rotate(-45deg) scale(1.0);
+}
+100%{
+
+    transform: rotate(-45deg) scale(0.8);
+}
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    
+    justify-content: center;
+    background-color: #0b1522;
+
+}
+*{
+
+    padding: 0px;
+    margin: 0px;
+    
+}
+.home{
+    display:flex ;
+    flex-wrap: wrap;
+}
+.moderno{
+    margin-top: 250px;
+    flex: 1;
+    min-width: 300px;
+}
+.moderno:first-child{
+    flex:  2;
+    padding: 25px;
+}
+.moderno div{
+    
+    border-radius: 8px;
+    padding: 25px;
+    background-color: #000000;
+    margin: 20px;
+    font-size: 50px;
+    color: white;
+    
+}
+p{
+    font-size: 50px;
+    color: wheat;
+}
