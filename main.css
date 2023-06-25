@@ -74,6 +74,7 @@ body{
 }
 .moderno{
     margin-top: 250px;
+    
     flex: 1;
     min-width: 300px;
 }
@@ -92,6 +93,7 @@ body{
     
 }
 p{
+    text-align: center;
     font-size: 50px;
     color: wheat;
 }
